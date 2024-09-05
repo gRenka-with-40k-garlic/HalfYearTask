@@ -1,0 +1,72 @@
+
+/* стили для страницы home */
+
+.home-text-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 50px;
+
+    .text-h2 {
+        margin-bottom: 10px;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 48px;
+    }
+    .text-p {
+        padding: 0 40px 0 50px;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 36px;
+    }
+}
+
+.home-images {
+    display: flex;
+    margin-top: 100px;
+    margin-right: 100px;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+        object-fit: cover;
+        width: 200px;
+        height: 200px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        border-radius: 50%;
+        box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* стили для страницы About Us */
+
+.about-image {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 200px;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    img {
+        object-position: right;
+        width: 500px;
+        height: 500px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.5);
+    }
+}

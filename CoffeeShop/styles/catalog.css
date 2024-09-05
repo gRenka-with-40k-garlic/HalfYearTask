@@ -1,0 +1,92 @@
+
+/* стили для coffee и sweets страниц */
+
+.background-coffee {
+    position: relative;
+    background-attachment: local, scroll;
+    background-position: center bottom ;
+    background-repeat: no-repeat;
+    background-size: cover, 150%;
+
+    background-image:
+            url("data:image/svg+xml;charset=UTF-8,%3csvg width='100%25' height='auto' id='svg' viewBox='0 0 1440 690' xmlns='http://www.w3.org/2000/svg' class='transition duration-300 ease-in-out delay-150'%3e%3cpath d='M 0,700 L 0,337 C 120,408.875 240,480.75 369,427 C 498,373.25 636,193.875 752,147 C 868,100.12499999999999 962,185.75 1073,202 C 1184,218.25 1312,165.125 1440,112 L 1440,700 L 0,700 Z' stroke='none' stroke-width='0' fill='%23ffffff' fill-opacity='1' class='transition-all duration-300 ease-in-out delay-150 path-0' transform='rotate(-180 720 350)'%3e%3c/path%3e%3c/svg%3e"),
+            url('../../CoffeeShop/img/Wave.png');
+}
+
+.background-sweets {
+    position: relative;
+    background-attachment: local, scroll;
+    background-position: center bottom ;
+    background-repeat: no-repeat;
+    background-size: cover, 150%;
+
+    background-image:
+            url("data:image/svg+xml;charset=UTF-8,%3csvg width='100%25' height='auto' id='svg' viewBox='0 0 1440 690' xmlns='http://www.w3.org/2000/svg' class='transition duration-300 ease-in-out delay-150'%3e%3cpath d='M 0,700 L 0,337 C 120,408.875 240,480.75 369,427 C 498,373.25 636,193.875 752,147 C 868,100.12499999999999 962,185.75 1073,202 C 1184,218.25 1312,165.125 1440,112 L 1440,700 L 0,700 Z' stroke='none' stroke-width='0' fill='%23ffffff' fill-opacity='1' class='transition-all duration-300 ease-in-out delay-150 path-0' transform='rotate(-180 720 350)'%3e%3c/path%3e%3c/svg%3e"),
+            url('../../CoffeeShop/img/bgSweets.jpg');
+}
+
+.product-cards {
+    display: flex;
+    margin: 0 150px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+
+    .card {
+        position: relative;
+        height: 600px;
+        width: 300px;
+        margin: 20px 20px;
+        flex-direction: column;
+        flex-shrink: 0;
+        text-align: left;
+        box-shadow: 0 8px 40px -5px rgba(0, 0, 0, 0.5);
+        background-color: #f7f7f7;
+
+        .oldPrice{
+            text-decoration: line-through;
+        }
+
+        .type {
+            margin-top: 5px;
+        }
+
+        .product-image {
+            object-position: top;
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+        }
+    }
+
+    .card .newPrice {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 20px;
+        font-family: "Kelly Slab", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 36px;
+        background-color: #A05C5C;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.card:hover {
+    transform: scale(0.95);
+}
+
+.card .newPrice:hover {
+    background-color: #573C3C;
+    color: #fff;
+}
+
+
+

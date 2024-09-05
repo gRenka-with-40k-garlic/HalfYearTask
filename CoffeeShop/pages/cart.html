@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/cart.css">
+    <link rel="icon" type="image/svg+xml" href="../icons/Coffeeshop.svg">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <img class="Home-icon" src="../icons/Coffeeshop.svg" alt="CoffeeShop Icon">
+
+            <a href="home.html">HomePage</a>
+            <a href="coffee.html">Coffee</a>
+            <a href="sweets.html">Sweets</a>
+            <a href="about.html">About Us</a>
+
+            <a href="cart.html">
+                <img class="Cart-icon" src="../icons/Cart.svg" alt="Cart Icon">
+            </a>
+            <a href="https://web.telegram.org/k/">  <!-- Главная страница Telegram -->
+                <img class="Social-icons" src="../icons/Telegram.svg" alt="Telegram Icon">
+            </a>
+            <a href="https://www.instagram.com"> <!-- Главная страница Instagram -->
+                <img class="Social-icons" src="../icons/Instagram.svg" alt="Instagram Icon">
+            </a>
+            <a href="https://vk.com/"> <!-- Главная страница VK -->
+                <img class="Social-icons" src="../icons/vk.svg" alt="VK Icon">
+            </a>
+        </nav>
+
+        <h1 class="header-heading">Bitter-sweet House</h1>
+        <h1 class="header-heading-another">Coffeeshop</h1>
+    </header>
+
+    <div class="cart-header">
+        <div>
+            <h2 class = "heading">Cart</h2>
+            <button id="purchaseButton" class="cart-order-btn">Purchase</button>
+        </div>
+    </div>
+
+    <p class="totalSumText">
+            Total cart cost:
+        <p class="totalSum"></p>
+
+    <div class="cart"></div>
+
+    <div class="cart" id="empty-container"></div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Оформление заказа</h2>
+            <form id="orderForm">
+                <label for="phone">Номер телефона:</label>
+
+                <input value="" class="tel"
+                       id="phone" name="phone"
+                       placeholder="+7(___)___-__-__" required>
+
+                <button type="submit">Отправить</button>
+            </form>
+            <h2>Мы вам перезвоним!</h2>
+        </div>
+    </div>
+
+<footer>
+    <p  class="footer-text">Тел. +7 (999) 999-99-99</p>
+    <p class="footer-text">г. Новосибирск</p>
+</footer>
+
+    <script src="../scripts/cart.js"></script>
+    <script src="../scripts/catalogParse.js"></script>
+    <script src="../scripts/cartCreate.js"></script>
+
+</body>
+</html>

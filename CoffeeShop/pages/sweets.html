@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sweets</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/catalog.css">
+    <link rel="icon" type="image/svg+xml" href="../icons/Coffeeshop.svg">
+</head>
+
+<body>
+    <div class="background-sweets">
+        <header class="header">
+            <nav>
+                <img class="Home-icon" src="../icons/Coffeeshop.svg" alt="CoffeeShop Icon">
+
+                <a href="home.html">HomePage</a>
+                <a href="coffee.html">Coffee</a>
+                <a href="sweets.html">Sweets</a>
+                <a href="about.html">About Us</a>
+
+                <a href="cart.html">
+                    <img class="Cart-icon" src="../icons/Cart.svg" alt="Cart Icon" >
+                </a>
+                <a href="https://web.telegram.org/k/">  <!-- Главная страница Telegram -->
+                    <img class="Social-icons" src="../icons/Telegram.svg" alt="Telegram Icon">
+                </a>
+                <a href="https://www.instagram.com"> <!-- Главная страница Instagram -->
+                    <img class="Social-icons" src="../icons/Instagram.svg" alt="Instagram Icon">
+                </a>
+                <a href="https://vk.com/"> <!-- Главная страница VK -->
+                    <img class="Social-icons" src="../icons/vk.svg" alt="VK Icon">
+                </a>
+            </nav>
+
+            <h1 class="header-heading">Bitter-sweet House</h1>
+            <h1 class="header-heading-another">Coffeeshop</h1>
+        </header>
+
+        <div>
+            <h2 class = "heading">Sweets</h2>
+            <p class = "button-pills">Сортировать по:
+                <button onclick="sortByPrice('asc')"
+                        ondblclick="sortByPrice('desc')">Цене</button>  <!-- по возрастанию 1 клик, по убыванию 2 -->
+                <button onclick="sortByType('asc')">Виду </button>      <!-- по алфавиту -->
+                <button onclick="sortByCountry('asc')">Стране </button> <!-- по алфавиту -->
+            </p>
+        </div>
+
+        <div class = "product-cards">
+
+            <div class="card">
+                <img class= "product-image"  src="../img/Assorti.jpg" alt="">
+                <h2 class="type">Шоколад, ассорти</h2>
+                <p class="country">Бельгия</p>
+                <p class="oldPrice"> 7000 руб.</p>
+                <button class="newPrice">1500 руб.</button>
+            </div>
+
+            <div class="card">
+                <img class= "product-image"  src="../img/HeartCandy.jpg" alt="">
+                <h2 class="type">Шоколад, Сердечки</h2>
+                <p class="country">Германия</p>
+                <p class="oldPrice">6000 руб.</p>
+                <button class="newPrice">600 руб.</button>
+            </div>
+
+            <div class="card">
+                <img class= "product-image"  src="../img/Makaroons.jpg" alt="">
+                <h2 class="type">Макаруны</h2>
+                <p class="country">Франция</p>
+                <p class="oldPrice"></p>
+                <button class="newPrice" >1100 руб.</button>
+            </div>
+
+            <div class="card">
+                <img class= "product-image"  src="../img/CocolateBombs.jpg" alt="">
+                <h2 class="type">Шоколадные бомбы</h2>
+                <p class="country">Россия</p>
+                <p class="oldPrice">9000 руб.</p>
+                <button class="newPrice">4000 руб.</button>
+            </div>
+
+            <div class="card">
+                <img class= "product-image"  src="../img/mereng.jpg" alt="">
+                <h2 class="type">Меренги</h2>
+                <p class="country">Франция</p>
+                <p class="oldPrice"> 5000 руб. </p>
+                <button class="newPrice">2000 руб.</button>
+            </div>
+
+            <div class="card">
+                <img class= "product-image"  src="../img/Marshmello.png" alt="">
+                <h2 class="type">Маршмэллоу</h2>
+                <p class="country">США</p>
+                <p class="oldPrice">  </p>
+                <button class="newPrice">5000 руб.</button>
+            </div>
+
+            <div class="card">
+                <img class= "product-image"  src="../img/Marmelade.png" alt="">
+                <h2 class="type">Мармелад</h2>
+                <p class="country">Россия</p>
+                <p class="oldPrice">  </p>
+                <button class="newPrice"> 400 руб.</button>
+            </div>
+
+            <div class="card">
+                <img class= "product-image"  src="../img/martsipan.jpg" alt="">
+                <h2 class="type">Марципан</h2>
+                <p class="country">Италия</p>
+                <p class="oldPrice"> 10000 руб.</p>
+                <button class="newPrice">4000 руб.</button>
+            </div>
+
+            <div class="card">
+                <img class= "product-image"  src="../img/chocolate-bars.jpg" alt="">
+                <h2 class="type">Шоколад, плитка</h2>
+                <p class="country">Швейцария</p>
+                <p class="oldPrice">8000 руб. </p>
+                <button class="newPrice">3000 руб.</button>
+            </div>
+
+            <!-- Добавлять карточки товара здесь -->
+
+        </div>
+    </div>
+
+        <footer>
+            <p  class="footer-text">Тел. +7 (999) 999-99-99</p>
+            <p class="footer-text">г. Новосибирск</p>
+        </footer>
+
+    <script src="../scripts/catalogParse.js"></script>
+    <script src="../scripts/catalogSorting.js"></script>
+
+</body>
+</html>

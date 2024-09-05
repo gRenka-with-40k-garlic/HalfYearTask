@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/catalog.css">
+    <link rel="icon" type="image/svg+xml" href="../icons/Coffeeshop.svg">
+</head>
+
+<body>
+    <div class="background-coffee">
+        <header class="header">
+            <nav>
+                <img class="Home-icon" src="../icons/Coffeeshop.svg" alt="CoffeeShop Icon">
+
+                <a href="home.html">HomePage</a>
+                <a href="coffee.html">Coffee</a>
+                <a href="sweets.html">Sweets</a>
+                <a href="about.html">About Us</a>
+
+                <a href="cart.html">
+                    <img class="Cart-icon" src="../icons/Cart.svg" alt="Cart Icon">
+                </a>
+                <a href="https://web.telegram.org/k/">  <!-- Главная страница Telegram -->
+                    <img class="Social-icons" src="../icons/Telegram.svg" alt="Telegram Icon">
+                </a>
+                <a href="https://www.instagram.com"> <!-- Главная страница Instagram -->
+                    <img class="Social-icons" src="../icons/Instagram.svg" alt="Instagram Icon">
+                </a>
+                <a href="https://vk.com/"> <!-- Главная страница VK -->
+                    <img class="Social-icons" src="../icons/vk.svg" alt="VK Icon">
+                </a>
+            </nav>
+
+            <h1 class="header-heading">Bitter-sweet House</h1>
+            <h1 class="header-heading-another">Coffeeshop</h1>
+        </header>
+
+        <div>
+            <h2 class = "heading">Coffee</h2>
+            <p class = "button-pills">Сортировать по:
+                <button onclick="sortByPrice('asc')"
+                        ondblclick="sortByPrice('desc')">Цене</button>  <!-- по возрастанию 1 клик, по убыванию 2 -->
+                <button onclick="sortByType('asc')">Виду </button>      <!-- по алфавиту -->
+                <button onclick="sortByCountry('asc')">Стране </button> <!-- по алфавиту -->
+            </p>
+        </div>
+
+
+        <div class = "product-cards">
+
+
+            <div class="card">
+                <img class= "product-image"  src="../img/ThirdCoffee.png" alt="">
+                <h2 class="type">Маракайбо</h2>
+                <p class="country">Венесуэла</p>
+                <p class="oldPrice">9000 руб.</p>
+                <button class="newPrice">2500 руб.</button>
+            </div>
+
+
+            <div class="card">
+                <img class= "product-image" src="../img/SecondCoffee.png" alt="">
+                <h2 class="type">Арабика</h2>
+                <p class="country">Бразилия</p>
+                <p class="oldPrice">12000 руб.</p>
+                <button class="newPrice" >5000 руб.</button>
+            </div>
+
+            <div class="card">
+                <img class= "product-image"  src="../img/FourthCoffee.png" alt="">
+                <h2 class="type">Арабика</h2>
+                <p class="country">Эфиопия</p>
+                <p class="oldPrice">18000 руб.</p>
+                <button class="newPrice">7999 руб.</button>
+            </div>
+
+            <div class="card">
+                <img class= "product-image"  src="../img/FiveCoffee.jpg" alt="">
+                <h2 class="type">Робуста</h2>
+                <p class="country">Индонезия</p>
+                <p class="oldPrice"> </p>
+                <button class="newPrice">4000 руб.</button>
+            </div>
+
+            <div class="card">
+                <img class= "product-image"  src="../img/coffee-beans.jpg" alt="">
+                <h2 class="type">Робуста</h2>
+                <p class="country">Вьетнам</p>
+                <p class="oldPrice"> </p>
+                <button class="newPrice">8000 руб.</button>
+            </div>
+
+            <div class="card">
+                <img class= "product-image"  src="../img/FirstCoffee.png" alt="">
+                <h2 class="type">Либерика</h2>
+                <p class="country">Малайзия</p>
+                <p class="oldPrice">8999 руб. </p>
+                <button class="newPrice">5000 руб.</button>
+            </div>
+
+            <div class="card">
+                <img class= "product-image"  src="../img/FirstCoffee.png" alt="">
+                <h2 class="type">Эксцельса</h2>
+                <p class="country">Конго</p>
+                <p class="oldPrice"> </p>
+                <button class="newPrice">9000 руб.</button>
+            </div>
+
+            <div class="card">
+                <img class= "product-image"  src="../img/FirstCoffee.png" alt="">
+                <h2 class="type">Марагоджип,
+                    <br> Арабика</h2>
+                <p class="country">Гватемала</p>
+                <p class="oldPrice"> </p>
+                <button class="newPrice">12800 руб.</button>
+            </div>
+
+        <!-- Добавлять карточки товара здесь -->
+
+        </div>
+    </div>
+
+    <footer>
+        <p  class="footer-text">Тел. +7 (999) 999-99-99</p>
+        <p class="footer-text">г. Новосибирск</p>
+    </footer>
+
+    <script src="../scripts/catalogSorting.js"></script>
+    <script src="../scripts/catalogParse.js"></script>
+
+</body>
+</html>

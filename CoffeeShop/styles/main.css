@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* header  для всех страниц */
+
+.header {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(59, 35, 19, 0.25), rgba(0, 0, 0, 0.94)),
+    url('../img/Banner.png');
+    box-shadow: 0 6px 20px -2px rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    font-family: "Lateef", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 48px;
+    color: #ffffff;
+    border-radius: 40px;
+}
+
+nav a:hover {
+    background-color: rgba(154, 153, 153, 0.2);
+}
+
+nav .Home-icon,
+nav .Cart-icon,
+nav .Social-icons {
+    filter: invert(100%);
+}
+
+nav .Cart-icon {
+    width: 60px;
+    height: 60px;
+}
+
+nav .Home-icon {
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+}
+
+nav .Social-icons {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    padding-top: 10px;
+}
+
+.header-heading {
+    margin-top: 180px;
+    margin-bottom: 0;
+    font-family: "Ingrid Darling", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 128px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-heading-another {
+    font-family: "Just Another Hand", cursive;
+    font-weight: 400;
+    font-size: 100px;
+    font-style: normal;
+}
+
+
+/* footer для всех страниц */
+
+footer {
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #573C3C;
+
+    .footer-text {
+        display: block;
+        padding-top: 10px;
+        padding-left: 200px;
+        text-align: left;
+        align-items: center;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 36px;
+        color: white;
+    }
+}
+
+/* стили для заголовка, кнопок и текста на страницах cart, coffee, sweets */
+
+.heading,
+.button-pills {
+    display: inline-block;
+    margin-top: 50px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.heading {
+    margin-left: 350px;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+}
+
+.button-pills {
+    margin-left: 250px;
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.button-pills button {
+    margin: 5px;
+    padding: 8px 12px;
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    background-color: #f7f7f7;
+    color: #000000;
+    border: 5px solid #000000;
+    border-radius: 30px;
+}
+
+.button-pills button:hover {
+    background-color: #d3d3d3;
+    color: #000000;
+}
